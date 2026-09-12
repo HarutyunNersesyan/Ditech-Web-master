@@ -1,0 +1,28 @@
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; color-scheme: dark; }
+html[data-theme="light"]{ color-scheme: light; }
+body{
+  margin:0;
+  background:var(--ink);
+  color:var(--text);
+  font-family:'Noto Sans Armenian','Noto Sans',sans-serif;
+  font-weight:400;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  transition: background .35s ease, color .25s ease;
+}
+::selection{ background:var(--coral); color:var(--selection-fg); }
+
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; display:block; }
+
+.wrap{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 var(--page-pad);
+}
+
+.mono{
+  font-family:'JetBrains Mono',monospace;
+  letter-spacing:0.02em;
+}
